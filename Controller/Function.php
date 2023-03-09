@@ -3,8 +3,8 @@
 class DataAndGrade {
     
     public function DateFunction($Date,$Month,$Year){
-        $YMD = "$Date-$Month-$Year";
-        return $YMD;
+        $FullDate = "$Date-$Month-$Year";
+        return $FullDate;
     }
     
     public function gradeFunction($grade){

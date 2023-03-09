@@ -41,7 +41,7 @@
         <li><a href="#about" class="nav-link scrollto"><i class="bi bi-calendar-day"></i> <span>เป็นวันอะไร?</span></a></li>
         <li><a href="#user" class="nav-link scrollto"><i class="bx bx-user"></i> <span>ข้อมูลของคุณ</span></a></li>
         <li><a href="#grade" class="nav-link scrollto"><i class="bi bi-file-earmark-fill"></i> <span>เกรดของคุณ</span></a></li>
-        <li><a href="../index.php" class="nav-link scrollto"><i class="bi bi-box-arrow-right"></i> <span>ออกไปสู่หน้าหลัก</span></a></li>
+        <li><a href="../index.php" class="nav-link scrollto" onclick="return confirm('คุณต้องการจะออกสู่หน้าหลักมั้ย?')"><i class="bi bi-box-arrow-right"></i> <span>ออกไปสู่หน้าหลัก</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
 
