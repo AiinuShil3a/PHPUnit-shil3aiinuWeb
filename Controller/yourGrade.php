@@ -1,5 +1,5 @@
 <?php
-        $obj = new DataAndGrade();
+        c
         $rs2 = $obj->gradeFunction($grade);
         $gradeIs = "";
         $gradeCGT = "";
@@ -32,6 +32,6 @@
                 $gradeCGT = "เสียใจด้วยคุณไม่ผ่านการทดสอบ";
             }
         }else{
-            include "../view/alertInputGrade.php";
+            include "../alert/alertInputGrade.php";
         }
 ?>
