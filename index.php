@@ -24,102 +24,90 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style1.css" rel="stylesheet">
+    <link href="assets/css/style3.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-center">
+    <!-- ======= selectGrade Section ======= -->
+    <section id="selectDate" class="d-flex flex-column justify-content-center">
         <div class="container" data-aos="zoom-in" data-aos-delay="100">
-            <h1>กรุณาเลือกวันที่ เช่น : <span class="typed" data-typed-items="30/05/2022"></span></h1><br><br>
-            <form method="GET" action="Controller/runFunction.php" enctype="multipart/form-data">
-                <div class="form-group">
-                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="Date" id="Date" required>
-                        <option value="" disabled selected hidden>เลือกวันที่ท่านต้องการ</option>
-                        <option value="01">01</option>
-                        <option value="02">02</option>
-                        <option value="03">03</option>
-                        <option value="04">04</option>
-                        <option value="05">05</option>
-                        <option value="06">06</option>
-                        <option value="07">07</option>
-                        <option value="08">08</option>
-                        <option value="09">09</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                    </select>
 
-                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="Month" id="Month" required>
-                        <option value="" disabled selected hidden>เลือกเดือนที่ท่านต้องการ</option>
-                        <option value="01">มกราคม</option>
-                        <option value="02">กุมภาพันธ์</option>
-                        <option value="03">มีนาคม</option>
-                        <option value="04">เมษายน</option>
-                        <option value="05">พฤษภาคม</option>
-                        <option value="06">มิถุนายน</option>
-                        <option value="07">กรกฎาคม</option>
-                        <option value="08">สิงหาคม</option>
-                        <option value="09">กันยายน</option>
-                        <option value="10">ตุลาคม</option>
-                        <option value="11">พฤศจิกายน</option>
-                        <option value="12">ธันวาคม</option>
-                    </select>
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-xl-10">
+                        <div class="card rounded-3 text-black">
+                            <div class="row g-0">
+                                <div class="col-lg-6">
+                                    <div class="card-body p-md-5 mx-md-4">
+                                        <div class="text-center">
+                                            <img src="assets/img/logoPNG.png" style="width: 200px;" alt="logo">
+                                            <p class="mt-1 mb-5 pb-1"><span class="typed" data-typed-items="Select your date.."></span></p>
+                                        </div>
 
-                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="Year" id="Year" required>
-                        <option value="" disabled selected hidden>เลือกปีที่ท่านต้องการ</option>
-                        <option value="2023">2023</option>
-                        <option value="2022">2022</option>
-                        <option value="2021">2021</option>
-                        <option value="2020">2020</option>
-                    </select>
+                                        <form method="GET" action="Controller/runFunction.php" enctype="multipart/form-data">
+                                            <div class="form-outline mb-4">
+                                                <input type="number" id="Date" name="Date" class="form-control" placeholder="ใส่วันที่เช่น 31" required />
+                                            </div>
 
-                    <nav id="navbar" class="navbar nav-menu">
-                        <ul>
-                            <br><br>
-                            <center>
-                                <li><a href="#about" class="nav-link scrollto active"><i class="bi bi-arrow-right-circle-fill"></i> <span>NEXT</span></a></li>
-                            </center>
-                        </ul>
-                    </nav>
+                                            <select class="form-select" aria-label="Default select example" name="Month" id="Month" required>
+                                                <option value="" disabled selected hidden>เลือกเดือนที่ท่านต้องการ</option>
+                                                <option value="01">มกราคม</option>
+                                                <option value="02">กุมภาพันธ์</option>
+                                                <option value="03">มีนาคม</option>
+                                                <option value="04">เมษายน</option>
+                                                <option value="05">พฤษภาคม</option>
+                                                <option value="06">มิถุนายน</option>
+                                                <option value="07">กรกฎาคม</option>
+                                                <option value="08">สิงหาคม</option>
+                                                <option value="09">กันยายน</option>
+                                                <option value="10">ตุลาคม</option>
+                                                <option value="11">พฤศจิกายน</option>
+                                                <option value="12">ธันวาคม</option>
+                                            </select>
+                                            <br>
+                                            <div class="form-outline mb-4">
+                                                <input type="number" id="Year" name="Year" class="form-control" placeholder="ใส่ปี ค.ส. ที่ต้องการเช่น 2002 " required />
+                                            </div>
+                                        <nav id="navbar" class="navbar nav-menu">
+                                            <ul>
+                                                <br><br>
+                                                <center>
+                                                    <li><a href="#selectGrade" class="nav-link scrollto active"><i class="bi bi-arrow-right-circle-fill"></i> <span>NEXT</span></a></li>
+                                                </center>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                                    <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                                        <h4 class="mb-4">Warning, please read</h4>
+                                        <h4 class="small mb-0">- Up to 31 days only !</h4><br>
+                                        <h4 class="small mb-0">- The year has a maximum of 2023 only !</h4><br>
+                                        <h4 class="small mb-0">- There is no date or year that is Zero !</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
     </section><!-- End Hero -->
 
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="d-flex flex-column justify-content-center">
+    <!-- ======= selectGrade Section ======= -->
+    <section id="selectGrade" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
         <div class="container-fluid h-custom">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-md-9 col-lg-6 col-xl-5">
-                    <img src="https://pngfreely.com/wp-content/uploads/2021/09/%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B7%E0%B8%AD-Png-Open-Book-Cartoon-Icon-%E0%B9%84%E0%B8%AD%E0%B8%84%E0%B8%AD%E0%B8%99-%E0%B9%80%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B7%E0%B8%AD-%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%95%E0%B8%B9%E0%B8%99.png" class="img-fluid" alt="Sample image" width="1000" height="1000">
+                    <img src="https://images.pexels.com/photos/3183198/pexels-photo-3183198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid" alt="Sample image" width="1250" height="12500">
                 </div>
                 <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                    <div class="container" data-aos="zoom-in" data-aos-delay="100">
                         <center>
                             <h2>ตรวจสอบผลการเรียนของคุณ</h2>
                         </center><br><br>
-                    </div>
-                    <form>
                         <!-- Email input -->
                         <div class="form-outline mb-4">
                             <label class="form-label" for="form3Example3">เลือกวิชาที่ต้องการ</label>
@@ -137,12 +125,12 @@
                             <input type="number" id="grade" name="grade" class="form-control form-control-lg" placeholder="ระบุคะแนนของคุณ เช่น 99" required>
                         </div>
 
-
+                        <br>
                         <div class="text-center text-lg-start mt-4 pt-2">
-                            <center><button type="submit" class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;">ดำเนินการต่อไป</button></center>
+                            <center><button type="submit" class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;">SUBMIT</button></center>
                         </div>
-
                     </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -153,14 +141,15 @@
     <!-- ======= Footer ======= -->
     <footer id="footer">
         <div class="container">
+            <br>
             <h3>Welcome to Website</h3>
             <p>My name is Supphalak Maneepanpanit 644259034 64/45 Major : SoftwareEnginearing.</p>
             <div class="social-links">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://twitter.com/enaJeikniP" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.facebook.com/SupphalakSB/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/_shil3a/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.skype.com/en/" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="https://www.linkedin.com/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
             <div class="copyright">
                 &copy; Copyright <strong><span>MyFunction</span></strong>. All Rights Reserved

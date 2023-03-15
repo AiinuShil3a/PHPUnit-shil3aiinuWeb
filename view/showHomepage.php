@@ -25,7 +25,7 @@
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
 
-  <link href="../assets/css/style2.css" rel="stylesheet">
+  <link href="../assets/css/style2.1.css" rel="stylesheet">
 
 </head>
 
@@ -49,8 +49,8 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>วันที่ของคุณที่ได้เลือก</h1>
-      <p>คือ <span class="typed" data-typed-items="<?php echo $rs; ?>"></span></p>
+      <h1>Welcome to Website</h1>
+      <p>By <span class="typed" data-typed-items="Supphalak Maneepanpanit"></span></p>
     </div>
   </section><!-- End Hero -->
 
@@ -58,23 +58,33 @@
   <section id="about" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100" align="right">
       <h1>วันที่คุณเลือกคือ "<?php echo $d_array[date('l', strtotime($rs))]; ?>"</h1><br>
-      <h2>It's on <?php echo date('l', strtotime($rs)); ?></h2>
+      <h2>It's on <?php echo date('l', strtotime($rs)); ?></h2><br>
+      <h5>DATE : <?php echo $rs; ?></h5>
     </div>
   </section><!-- End About Section -->
 
   
-  <!-- ======= About user ======= -->
-  <section id="user" class="d-flex flex-column justify-content-center">
+    <!-- ======= user Section ======= -->
+    <section id="user" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <center><h1>ข้อมูลของคุณ</h1></center><br><br>
-      <p>ชื่อ : ศุภลักษณ์ เจริญผล</p>
-      <p>ชั้น : 63/88</p>
-      <p>เลขประจำตัว : 633259034</p>
-      <p>วิชา : <?php echo $class; ?></p>
-      <p>คะแนนของคุณ : <?php echo $grade; ?></p>
-      <p>เมื่อวันที่ : <?php echo $rs; ?></p>
-    </div>
-  </section><!-- End About user -->
+        <div class="container-fluid h-custom">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-md-9 col-lg-6 col-xl-5">
+                    <img src="https://images.pexels.com/photos/1497232/pexels-photo-1497232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid" alt="Sample image" width="1250" height="12500">
+                </div>
+                <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                        <center>
+                            <h1>ข้อมูลของคุณ</h1>
+                        </center><br><br>
+                        <p>คุณ : Supphalak M.</p>
+                        <p>วิชา : <?php echo $class; ?></p>
+                        <p>คะแนนของคุณ : <?php echo $grade; ?></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
 
     <!-- ======= About grade ======= -->
     <section id="grade" class="d-flex flex-column justify-content-center">
@@ -83,9 +93,9 @@
         <div class="card-body">
           <div class="container" data-aos="zoom-in" data-aos-delay="100">
             <br><br>
-            <center><h2>เกรดที่คุณได้</h2></center><br><br>
-            <center><h1><?php echo $gradeIs; ?></h1></center><br><br>
-            <center><h4><?php echo $gradeCGT; ?></h4></center><br><br>
+            <center><p>เกรดที่คุณได้</p></center><br><br>
+            <center><h1><?php echo $jsonDecode[0]; ?></h1></center><br><br>
+            <center><p><?php echo $jsonDecode[1]; ?></p></center><br><br>
           </div>
         </div>
       </div>
@@ -99,11 +109,11 @@
       <h3>Welcome to Website</h3>
       <p>My name is Supphalak Maneepanpanit 644259034 64/45 Major : SoftwareEnginearing.</p>
       <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://twitter.com/enaJeikniP" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/SupphalakSB/" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/_shil3a/" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.skype.com/en/" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="https://www.linkedin.com/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
       <div class="copyright">
         &copy; Copyright <strong><span>MyFunction</span></strong>. All Rights Reserved
