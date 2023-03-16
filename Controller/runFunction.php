@@ -1,4 +1,6 @@
 <?php
+        
+        $summit = isset($_GET['SUBMIT']) ? $_GET['SUBMIT'] : include "../alert/aleart_Submit.js";
         $Date = $_GET['Date'];
         $Month = $_GET['Month'];
         $Year = $_GET['Year'];

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Univercity</title>
+    <title>Shil3aiinuWebsite</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -127,7 +127,7 @@
 
                         <br>
                         <div class="text-center text-lg-start mt-4 pt-2">
-                            <center><button type="submit" class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;">SUBMIT</button></center>
+                            <center><button type="submit" id="SUBMIT" name="SUBMIT" class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;">SUBMIT</button></center>
                         </div>
                     </form>
                     </div>
